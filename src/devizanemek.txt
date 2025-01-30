@@ -1,4 +1,3 @@
-543;dsadd
-111;dsad
-222;gfdf
-333;dasdsad
+HUF;Forint
+USD;Dollár
+EUR;Euró

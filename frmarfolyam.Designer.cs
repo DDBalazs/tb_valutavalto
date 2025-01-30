@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbdevnem = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txdevegy = new System.Windows.Forms.TextBox();
             this.txdevhuf = new System.Windows.Forms.TextBox();
+            this.txdevegy = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btsave = new System.Windows.Forms.Button();
             this.btexit = new System.Windows.Forms.Button();
@@ -70,19 +70,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Egység";
             // 
-            // txdevegy
-            // 
-            this.txdevegy.Location = new System.Drawing.Point(6, 19);
-            this.txdevegy.Name = "txdevegy";
-            this.txdevegy.Size = new System.Drawing.Size(100, 20);
-            this.txdevegy.TabIndex = 0;
-            // 
             // txdevhuf
             // 
             this.txdevhuf.Location = new System.Drawing.Point(6, 60);
             this.txdevhuf.Name = "txdevhuf";
             this.txdevhuf.Size = new System.Drawing.Size(100, 20);
             this.txdevhuf.TabIndex = 1;
+            this.txdevhuf.TextChanged += new System.EventHandler(this.txdevhuf_TextChanged);
+            // 
+            // txdevegy
+            // 
+            this.txdevegy.Location = new System.Drawing.Point(6, 19);
+            this.txdevegy.Name = "txdevegy";
+            this.txdevegy.Size = new System.Drawing.Size(100, 20);
+            this.txdevegy.TabIndex = 0;
+            this.txdevegy.TextChanged += new System.EventHandler(this.txdevegy_TextChanged);
             // 
             // label2
             // 
@@ -103,6 +105,7 @@
             this.btsave.TabIndex = 4;
             this.btsave.Text = "Mentés";
             this.btsave.UseVisualStyleBackColor = true;
+            this.btsave.Click += new System.EventHandler(this.btsave_Click);
             // 
             // btexit
             // 
@@ -114,6 +117,7 @@
             this.btexit.TabIndex = 6;
             this.btexit.Text = "Elvet";
             this.btexit.UseVisualStyleBackColor = true;
+            this.btexit.Click += new System.EventHandler(this.btexit_Click);
             // 
             // frmarfolyam
             // 
@@ -130,6 +134,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmarfolyam";
             this.Text = "Áfrolyam rögzítése";
+            this.Load += new System.EventHandler(this.frmarfolyam_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

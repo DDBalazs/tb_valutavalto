@@ -33,5 +33,11 @@ namespace tb_valutavalto_20250128
             frmarfolyam arfolyam = new frmarfolyam();
             arfolyam.ShowDialog();
         }
+
+        private void msvaluta_Click(object sender, EventArgs e)
+        {
+            frmvalutavaltas valutavaltas = new frmvalutavaltas();
+            valutavaltas.ShowDialog();
+        }
     }
 }

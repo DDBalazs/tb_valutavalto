@@ -79,6 +79,7 @@
             this.msvaluta.Name = "msvaluta";
             this.msvaluta.Size = new System.Drawing.Size(81, 20);
             this.msvaluta.Text = "Valutaváltás";
+            this.msvaluta.Click += new System.EventHandler(this.msvaluta_Click);
             // 
             // msstat
             // 
